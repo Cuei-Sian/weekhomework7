@@ -1,0 +1,21 @@
+.pseudo-item{
+  display: flex;
+  font-weight: 500;
+}
+.pseudo-item + .pseudo-item::before{
+  content:'/';
+  padding: 0 12px;
+  color: $ne-300;
+  font-weight: 700;
+}
+.pseudo-link{
+  color: $ne-600;
+}
+@media (max-width:767px){
+  .pseudo-item + .pseudo-item::before{
+    padding: 0 8px;
+  }
+  .pseudo-item{
+    font-size: 14px;
+  }
+}

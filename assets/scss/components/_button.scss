@@ -1,0 +1,30 @@
+/*--通用按鈕樣式--*/
+.btn{
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer; /*--游標改成手指的圖示--*/
+  border: none; /*--去除邊線--*/
+  background-color: transparent;/*--按鈕背景色:透明--*/
+}
+@media(max-width:576px){
+  .btn{
+    padding: 8px 16px;
+  }
+}
+.btn-dark{ 
+  color: $ne-000;
+  background-color: $ne-900;/*--按鈕背景色:黑色--*/
+}
+.btn-light{
+  border: 1px solid $ne-900;
+  &:hover{
+    color: $ne-000;
+    background-color: $ne-900;
+  }
+}
+.btn-primary{
+  background-color: $pr-300;
+}
