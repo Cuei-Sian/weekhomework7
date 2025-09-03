@@ -5,54 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
-
     <main>
       <nav class="d-f">
-        <button class="d-none btn-nav-md"><a href="products.html">商品列表</a></button>
-        <button class="d-none btn-nav-md"><a href="story.html">品牌故事</a></button>
+        <div class="d-none btn-nav-md">
+          <a href="products.html">商品列表</a>
+        </div>
+        <div class="d-none btn-nav-md">
+          <a href="story.html">品牌故事</a>
+        </div>
       </nav>
 
       <section class="header-banner">
-        <div class="header-banner-text text-ne-000 justify-center align-center">
-          <h1 class="display-1 mb-16 display-2-md mb-8-md">URBNSTEP</h1>
-          <p class="h3 h5-md mb-48 mb-32-md">Your Step, Your Statement</p>
-          <button type="button" class="btn btn-primary">立即選購</button>
+        <div>
+          <div class="header-banner-text text-ne-000">
+            <h1 class="display-1 mb-16 display-2-md mb-8-md">URBNSTEP</h1>
+            <p class="h3 h5-md mb-48 mb-32-md">Your Step, Your Statement</p>
+            <button type="button" class="btn btn-primary">立即選購</button>
+          </div>
         </div>
       </section>
 
       <section class="ptb-64 ptb-40-md">
         <div class="container">
-          <div class="new-product mb-32 mb-24-md">
-            <h2 class="display-2 h2-md mb-12 mb-8-md">New Arrival<br><span class="h2 h4-md">新品上市</span></h2>
-          </div>
+          <h2
+            class="col-12 col-4-md new-product mb-32 mb-24-md display-2 h2-md mb-12 mb-8-md"
+          >
+            New Arrival<br /><span class="h2 h4-md">新品上市</span>
+          </h2>
 
-          <ul class="row row-md">
-            <li class="col-6 col-2-md mb-40 mb-24-md" data-aos="fade-right">
-            <img class="mb-12 " src="/assets/images/2025-week3-4/new-1.png" alt="新上市1">
+          <ul class="row newProduct-row-md">
+            <li
+              class="col-6 newProduct-col-md mb-40 mb-24-md"
+              data-aos="fade-right"
+            >
+              <img
+                class="mb-12"
+                src="/assets/images/2025-week3-4/new-1.png"
+                alt="新上市1"
+              />
               <h5 class="h5 mb-4 mb-0-md">Monoverse</h5>
               <p>NT$3,600</p>
             </li>
-            <li class="col-6 col-2-md mb-40 mb-24-md"  data-aos="fade-left">
-              <img class="mb-12 mb-8-md" src="/assets/images/2025-week3-4/new-2.png" alt="新上市2">
+            <li
+              class="col-6 newProduct-col-md mb-40 mb-24-md"
+              data-aos="fade-left"
+            >
+              <img
+                class="mb-12 mb-8-md"
+                src="/assets/images/2025-week3-4/new-2.png"
+                alt="新上市2"
+              />
               <h5 class="h5 mb-4 mb-0-md">PLATFORM 404</h5>
               <p>NT$2,600</p>
             </li>
-            <li class="col-6 col-2-md" data-aos="fade-right">
-              <img class="mb-12 mb-8-md" src="/assets/images/2025-week3-4/new-3.png" alt="新上市3">
-              <h5 class="h5 mb-4 mb-0-md">URBN Force</h5>
-              <p>NT$3,200</p>
+            <li class="col-6 newProduct-col-md" data-aos="fade-right">
+              <div>
+                <img
+                  class="mb-12 mb-8-md"
+                  src="/assets/images/2025-week3-4/new-3.png"
+                  alt="新上市3"
+                />
+                <h5 class="h5 mb-4 mb-0-md">URBN Force</h5>
+                <p>NT$3,200</p>
+              </div>
             </li>
-            <li class="col-6 col-2-md"  data-aos="fade-left">
-              <img class="mb-12 mb-8-md" src="/assets/images/2025-week3-4/new-4.png" alt="新上市4">
-              <h5 class="h5 mb-4 mb-0-md">Mode90</h5>
-              <p>NT$4,000</p>
+            <li class="col-6 newProduct-col-md" data-aos="fade-left">
+              <div>
+                <img
+                  class="mb-12 mb-8-md"
+                  src="/assets/images/2025-week3-4/new-4.png"
+                  alt="新上市4"
+                />
+                <h5 class="h5 mb-4 mb-0-md">Mode90</h5>
+                <p>NT$4,000</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -63,27 +98,50 @@
           <h3 class="h2 h4-md mb-16">熱銷補貨</h3>
           <ul class="row flex-nowrap-md overflow-x-auto-md product-row-md">
             <li class="col-3 product-col-md">
-              <div class="product" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+              <div
+                class="product"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 <span class="product-text">人氣 No.1</span>
-                <img src="/assets/images/product-3.png" alt="紫色星星鞋">
+                <img src="/assets/images/product-3.png" alt="紫色星星鞋" />
               </div>
             </li>
             <li class="col-3 product-col-md">
-              <div class="product" data-aos-delay="100" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+              <div
+                class="product"
+                data-aos-delay="100"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 <span class="product-text">人氣 No.1</span>
-                <img src="/assets/images/product.png" alt="黑底白鞋">
+                <img src="/assets/images/product.png" alt="黑底白鞋" />
               </div>
             </li>
             <li class="col-3 product-col-md">
-              <div class="product" data-aos-delay="200" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+              <div
+                class="product"
+                data-aos-delay="200"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 <span class="product-text">人氣 No.1</span>
-                <img src="/assets/images/product-6.png" alt="杏色運動鞋">
+                <img src="/assets/images/product-6.png" alt="杏色運動鞋" />
               </div>
             </li>
             <li class="col-3 product-col-md">
-              <div class="product" data-aos-delay="300" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+              <div
+                class="product"
+                data-aos-delay="300"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 <span class="product-text">人氣 No.1</span>
-                <img src="/assets/images/product-4.png" alt="白色休閒鞋">
+                <img src="/assets/images/product-4.png" alt="白色休閒鞋" />
               </div>
             </li>
           </ul>
@@ -92,30 +150,44 @@
 
       <section class="ptb-48 ptb-24-md">
         <div class="banner">
-          <h3 class="display-2 h2-md text-ne-000 d-flex-md flex-column-md gap-8 mb-16">
+          <h3
+            class="display-2 h2-md text-ne-000 d-flex-md flex-column-md gap-8 mb-16"
+          >
             <span>URBNSTEP</span>
             <span class="h1 h3-md plr-24 text-pr-300">x</span>
             <span>Kevin Chen</span>
           </h3>
-          <h3 class="h2 h5-md text-ne-000 mb-32 mb-24-md">跨界聯名，限量發售</H3>
-          <p class="text-lg text-md-md text-ne-500 d-flex-md flex-column-md gap-4-md mb-48">
+          <h3 class="h2 h5-md text-ne-000 mb-32 mb-24-md">
+            跨界聯名，限量發售
+          </h3>
+          <p
+            class="text-lg text-md-md text-ne-500 d-flex-md flex-column-md gap-4-md mb-48"
+          >
             <span>新銳漫畫家 Kevin Chen 親自操刀設計</span>
             <span class="d-none-md">，</span>
             <span>街頭能量全面引爆！</span>
           </p>
           <button type="button" class="btn btn-primary">立即搶購</button>
-          <img src="/assets/images/2025-week3-4/star.svg" alt="star" class="star-img">
-          <img src="/assets/images/2025-week3-4/sparkle.svg" alt="sparkle" class="sparkle-img">
+          <img
+            src="/assets/images/2025-week3-4/star.svg"
+            alt="star"
+            class="star-img"
+          />
+          <img
+            src="/assets/images/2025-week3-4/sparkle.svg"
+            alt="sparkle"
+            class="sparkle-img"
+          />
         </div>
       </section>
-      
+
       <section class="ptb-64 ptb-40-md">
         <div class="container">
           <h3 class="h2 h4-md mb-16">依系列選購</h3>
-          <ul class="row">
+          <ul class="row row-md">
             <li class="col-3 col-2-md mb-12-md">
               <div class="category" data-aos="zoom-in">
-                <img src="/assets/images/product-6.png" alt="慢跑系列">
+                <img src="/assets/images/product-6.png" alt="慢跑系列" />
                 <div class="category-text">
                   <h4 class="h3 h6-md mb-8">URBN RUNNER</h4>
                   <p class="h4 h6-md">慢跑系列</p>
@@ -125,17 +197,20 @@
 
             <li class="col-3 col-2-md mb-12-md">
               <div class="category" data-aos="zoom-in" data-aos-delay="100">
-                <img src="/assets/images/2025-week3-4/product-11.png" alt="滑板系列">
+                <img
+                  src="/assets/images/2025-week3-4/product-11.png"
+                  alt="滑板系列"
+                />
                 <div class="category-text">
                   <h4 class="h3 h6-md mb-8">STREETMODE</h4>
                   <p class="h4 h6-md">滑板系列</p>
                 </div>
               </div>
             </li>
-            
+
             <li class="col-3 col-2-md">
               <div class="category" data-aos="zoom-in" data-aos-delay="200">
-                <img src="/assets/images/product-9.png" alt="厚底系列">
+                <img src="/assets/images/product-9.png" alt="厚底系列" />
                 <div class="category-text">
                   <h4 class="h3 h6-md mb-8">CHUNK DISTRICT</h4>
                   <p class="h4 h6-md">厚底系列</p>
@@ -145,7 +220,10 @@
 
             <li class="col-3 col-2-md">
               <div class="category" data-aos="zoom-in" data-aos-delay="300">
-                <img src="/assets/images/2025-week3-4/product-10.png" alt="聯名企劃">
+                <img
+                  src="/assets/images/2025-week3-4/product-10.png"
+                  alt="聯名企劃"
+                />
                 <div class="category-text">
                   <h4 class="h3 h6-md mb-8">COLLAB ZONE</h4>
                   <p class="h4 h6-md">聯名企劃</p>
@@ -156,20 +234,32 @@
         </div>
       </section>
 
-      <section class="ptb-64 mb-48 ptb-40-md mb-24-md">
+      <!-- <section class="ptb-64 mb-48 ptb-40-md mb-24-md">
         <div class="container">
           <h3 class="h2 h4-md mb-16">穿搭靈感</h3>
           <div class="inspiration-row overflow-x-auto-md">
             <div class="inspiration-col-4">
               <div class="inspiration-row">
                 <div class="inspiration-col-6" data-aos="fade-right">
-                  <img class="" src="/assets/images/2025-week3-4/inspiration-1.png" alt="左上一">
+                  <img
+                    class=""
+                    src="/assets/images/2025-week3-4/inspiration-1.png"
+                    alt="左上一"
+                  />
                 </div>
                 <div class="inspiration-col-6" data-aos="fade-right">
-                  <img class="" src="/assets/images/2025-week3-4/inspiration-2.png" alt="左上二">
+                  <img
+                    class=""
+                    src="/assets/images/2025-week3-4/inspiration-2.png"
+                    alt="左上二"
+                  />
                 </div>
                 <div class="inspiration-col-12" data-aos="flip-left">
-                  <img class="" src="/assets/images/2025-week3-4/inspiration-3.png" alt="左下"> 
+                  <img
+                    class=""
+                    src="/assets/images/2025-week3-4/inspiration-3.png"
+                    alt="左下"
+                  />
                 </div>
               </div>
             </div>
@@ -177,22 +267,46 @@
             <div class="inspiration-col-4">
               <div class="inspiration-row">
                 <div class="inspiration-col-6" data-aos="fade-down">
-                  <img class="" src="/assets/images/2025-week3-4/inspiration-4.png" alt="中上三">
+                  <img
+                    class=""
+                    src="/assets/images/2025-week3-4/inspiration-4.png"
+                    alt="中上三"
+                  />
                 </div>
                 <div class="inspiration-col-6" data-aos="fade-down">
-                  <img class="" src="/assets/images/2025-week3-4/inspiration-5.png" alt="中上四">
+                  <img
+                    class=""
+                    src="/assets/images/2025-week3-4/inspiration-5.png"
+                    alt="中上四"
+                  />
                 </div>
                 <div class="inspiration-col-6" data-aos="fade-down">
-                  <img class="" src="/assets/images/2025-week3-4/inspiration-6.png" alt="中一">
+                  <img
+                    class=""
+                    src="/assets/images/2025-week3-4/inspiration-6.png"
+                    alt="中一"
+                  />
                 </div>
                 <div class="inspiration-col-6" data-aos="fade-down">
-                  <img class="" src="/assets/images/2025-week3-4/inspiration-7.png" alt="中二">
+                  <img
+                    class=""
+                    src="/assets/images/2025-week3-4/inspiration-7.png"
+                    alt="中二"
+                  />
                 </div>
                 <div class="inspiration-col-6" data-aos="fade-down">
-                  <img class="" src="/assets/images/2025-week3-4/inspiration-8.png" alt="中下一">
+                  <img
+                    class=""
+                    src="/assets/images/2025-week3-4/inspiration-8.png"
+                    alt="中下一"
+                  />
                 </div>
                 <div class="inspiration-col-6" data-aos="fade-down">
-                  <img class="" src="/assets/images/2025-week3-4/inspiration-9.png" alt="中下二">
+                  <img
+                    class=""
+                    src="/assets/images/2025-week3-4/inspiration-9.png"
+                    alt="中下二"
+                  />
                 </div>
               </div>
             </div>
@@ -200,22 +314,28 @@
             <div class="inspiration-col-4">
               <div class="inspiration-row">
                 <div class="inspiration-col-12" data-aos="flip-left">
-                  <img src="/assets/images/2025-week3-4/inspiration-10.png" alt="右上">
+                  <img
+                    src="/assets/images/2025-week3-4/inspiration-10.png"
+                    alt="右上"
+                  />
                 </div>
                 <div class="inspiration-col-6" data-aos="fade-left">
-                  <img src="/assets/images/2025-week3-4/inspiration-11.png" alt="右下左">
+                  <img
+                    src="/assets/images/2025-week3-4/inspiration-11.png"
+                    alt="右下左"
+                  />
                 </div>
                 <div class="inspiration-col-6" data-aos="fade-left">
-                  <img src="/assets/images/2025-week3-4/inspiration-12.png" alt="右下右">
+                  <img
+                    src="/assets/images/2025-week3-4/inspiration-12.png"
+                    alt="右下右"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-
-
+      </section> -->
     </main>
 
     <%- include('./layout/footer'); -%>

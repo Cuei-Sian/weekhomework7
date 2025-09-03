@@ -1,50 +1,77 @@
-@media(max-width:576px){
-  .btn-nav-md{
+@media (max-width: 767px) {
+  .btn-nav-md {
     width: 50%;
     display: inline;
     padding: 12px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    text-align: center;
     cursor: pointer; /*--游標改成手指的圖示--*/
     border: none; /*--去除邊線--*/
-    background-color: $pr-100;/*--按鈕背景色:透明--*/
+    background-color: $pr-100; /*--按鈕背景色:透明--*/
   }
-  .btn-nav-md:hover{
+  .btn-nav-md:hover {
     background-color: $pr-200;
   }
 }
 
-.header-banner{
+.header-banner {
   text-align: left;
   background-image: url(/assets/images/2025-week3-4/banner.png);
-  background-repeat: no-repeat;//背景圖不重覆
-  background-size: cover;//滿版設定
-  background-position: center;//置中呈現
-  .header-banner-text{
+  background-repeat: no-repeat; //背景圖不重覆
+  background-size: cover; //滿版設定
+  background-position: center; //置中呈現
+  .header-banner-text {
     padding-left: 200px;
     padding-top: 289px;
     padding-bottom: 288px;
   }
 }
-@media(max-width:767px){
-  .header-banner{
+@media (max-width: 767px) {
+  .header-banner {
     background-image: url(/assets/images/2025-week3-4/banner-sm.png);
+    max-width: 100%;
+    overflow: hidden;
+    .header-banner-text {
+      text-align: left;
+      display: block;
+      padding: 155px 24px;
+      justify-content: center;
+      align-items: flex-start;
+    }
   }
-  .header-banner-text{
-    padding: 155px 24px;
+  * {
+    outline: 1px solid red;
   }
-  .btn{
+  .btn {
     padding: 12px 24px;
   }
 }
-.new-product{
+.new-product {
   text-align: center;
 }
+@media (max-width: 767px) {
+  .newProduct-row-md {
+    flex-wrap: wrap;
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+  .newProduct-col-md {
+    // min-width: 316px;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: calc(100% / 4 * 2);
+  }
+  .newProduct-col-md img {
+    width: 100%;
+    height: auto;
+  }
+}
 
-.product{
+.product {
   position: relative;
-  .product-text{
+  .product-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -55,64 +82,63 @@
   }
 }
 
-@media(max-width:767px){
-  .product-row-md{
+@media (max-width: 767px) {
+  .product-row-md {
     margin-left: -8px;
     margin-right: -8px;
   }
-  .product-col-md{
+  .product-col-md {
     min-width: 316px;
     padding-left: 8px;
     padding-right: 8px;
   }
 }
 
-.banner{
+.banner {
   text-align: center;
   background-image: url(/assets/images/2025-week3-4/banner-co-branded.png);
-  background-repeat: no-repeat;//背景圖不重覆
-  background-size: cover;//滿版設定
-  background-position: center;//置中呈現
+  background-repeat: no-repeat; //背景圖不重覆
+  background-size: cover; //滿版設定
+  background-position: center; //置中呈現
   padding: 100px 0;
   position: relative;
 
-  .star-img{
+  .star-img {
     position: absolute;
     width: 48px;
     top: 68px;
     left: calc(50% - 397px);
   }
-  .sparkle-img{
+  .sparkle-img {
     position: absolute;
     width: 76px;
     bottom: 132px;
     right: calc(50% - 357px);
-
   }
 }
 
-@media(max-width:767px){
-  .banner{
+@media (max-width: 767px) {
+  .banner {
     padding: 64px 0;
     background-image: url(/assets/images/2025-week3-4/banner-co-branded-sm.png);
     overflow: hidden;
   }
-  .btn{
+  .btn {
     padding: 12px 24px;
   }
-  .star-img{
+  .star-img {
     top: 32px;
     left: -20px;
   }
-  .sparkle-img{
+  .sparkle-img {
     right: -28px;
     bottom: 104px;
   }
 }
 
-.category{
+.category {
   position: relative;
-  .category-text{
+  .category-text {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -127,39 +153,37 @@
   }
 }
 
-.inspiration{
-  &-row{
+.inspiration {
+  &-row {
     display: flex;
     flex-wrap: wrap;
     margin: -4px;
   }
-  &-col-4{
+  &-col-4 {
     width: calc(100% / 12 * 4);
     padding: 4px;
   }
-  &-col-6{
+  &-col-6 {
     width: calc(100% / 12 * 6);
     padding: 4px;
   }
-  &-col-12{
+  &-col-12 {
     width: 100%;
     padding: 4px;
   }
-
-
 }
 
-@media(max-width:767px){
-  .inspiration-row{
+@media (max-width: 767px) {
+  .inspiration-row {
     flex-wrap: nowrap;
     margin: 0 -8px;
-    img{
+    img {
       min-width: 300px;
     }
   }
   .inspiration-col-4,
   .inspiration-col-6,
-  .inspiration-col-12{
+  .inspiration-col-12 {
     width: unset;
     padding: 0 8px;
   }
