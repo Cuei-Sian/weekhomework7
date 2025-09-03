@@ -41,9 +41,6 @@
       align-items: flex-start;
     }
   }
-  * {
-    outline: 1px solid red;
-  }
   .btn {
     padding: 12px 24px;
   }
@@ -58,7 +55,6 @@
     margin-right: -6px;
   }
   .newProduct-col-md {
-    // min-width: 316px;
     padding-left: 6px;
     padding-right: 6px;
     width: calc(100% / 4 * 2);
